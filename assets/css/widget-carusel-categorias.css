@@ -1,0 +1,473 @@
+.wiwu-banner-categoria{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 700px;
+    width: 100%;
+}
+
+@media (max-width:769px){
+    .wiwu-banner-categoria{
+        height: 500px;
+    }
+    
+}
+
+.wiwu-banner-categoria-cont{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+
+}
+
+
+
+.wiwu-banner-categoria-box{
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 70%;
+    min-height: 70%;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+@media (max-width:769px){
+    .wiwu-banner-categoria-box{
+        height: 60%;
+        min-height: 60%;
+    } 
+}
+
+.wiwu-banner-categoria-margen{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    max-width: calc(1140px + 10%);
+    position: relative;
+    width: 100%;
+}
+
+@media (max-width:769px){
+    .wiwu-banner-categoria-margen{
+        align-items: flex-start;
+        padding-top: 40px;
+    } 
+}
+
+
+
+.wiwu-banner-categoria-box-titulo{
+    display: block;
+    color: #ffffff !important;
+    margin-bottom: 0 !important;
+    font-weight: 800 !important;
+    font-family: 'Roboto';
+    letter-spacing: 0;
+    line-height: 1 !important;
+    text-transform: uppercase;
+    width: 100%;
+
+}
+
+
+.wiwu-banner-subcategoria-box{
+    background: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
+    z-index: 2;
+}
+
+@media (max-width:769px){
+    .wiwu-banner-subcategoria-box{
+        align-content: flex-start;
+        align-items: flex-start;
+        padding: 32px 15px 0 15px;
+    }
+}
+
+.wiwu-banner-carousel{
+    
+}
+
+.wiwu-banner-carousel .item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+    width: 100%;
+}
+
+.wiwu-banner-carousel-box-images{
+    aspect-ratio: 1/1;
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 500ms linear;
+	-moz-transition: all 500ms linear;
+	-ms-transition: all 500ms linear;
+	-o-transition: all 500ms linear;
+	transition: all 500ms linear;
+}
+
+@media (max-width: 769px){
+    .wiwu-banner-carousel-box-images{
+        box-sizing: border-box;
+        flex: 1 1 40%;
+        width: 40%; 
+    }
+}
+
+.wiwu-banner-carousel-box-image-principal,
+.wiwu-banner-carousel-box-image-secundaria{
+    aspect-ratio: 1 / 1;
+    display: block !important;
+    height: 100% !important;
+    object-fit: contain;
+    object-position: center;
+    width: 100% !important;
+    position: relative;
+    -webkit-transition: all 500ms linear;
+	-moz-transition: all 500ms linear;
+	-ms-transition: all 500ms linear;
+	-o-transition: all 500ms linear;
+	transition: all 500ms linear;
+    transform: translateX(0%);
+}
+
+.wiwu-banner-carousel-box-image-secundaria{
+	
+}
+
+.wiwu-banner-carousel-box-images:hover .wiwu-banner-carousel-box-image-principal,
+.wiwu-banner-carousel-box-images:hover .wiwu-banner-carousel-box-image-secundaria{
+    transform: translateX(-100%);
+}
+
+.wiwu-banner-carousel-box-informacion{
+    flex: 1 1 60%;
+    padding-left: 15%;
+}
+
+@media (max-width: 769px){
+    .wiwu-banner-carousel-box-informacion{
+        box-sizing: border-box;
+        flex: 1 1 65%;
+        padding-left: 5%;
+        width: 65%; 
+    }
+}
+
+.wiwu-banner-carousel-box-informacion-titulo{
+    color: #2E2E2E !important;
+    font-family: 'Roboto';
+    /* font-size: 50px !important; */
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 1.1 !important;
+    margin-bottom: 0 !important;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.wiwu-banner-carousel-box-informacion-titulo-grande{
+    font-size: 147px !important;
+}
+.wiwu-banner-carousel-box-informacion-titulo-mediana{
+    font-size: 82px !important;
+}
+.wiwu-banner-carousel-box-informacion-titulo-pequena{
+    font-size: 52px !important;
+}
+
+@media (max-width: 769px){
+    .wiwu-banner-carousel-box-informacion-titulo-pequena{
+        font-size: 25px !important;
+    }
+}
+
+.wiwu-banner-carousel-box-informacion-texto{
+    margin-bottom: 0 !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px !important;
+    color: #2E2E2E !important;
+    text-align: left;
+    letter-spacing: 0;
+    font-weight: 300;
+    line-height: 1.4 !important;
+    width: 75%;
+}
+
+@media (max-width: 769px){
+    .wiwu-banner-carousel-box-informacion-texto{
+        font-size: 13px !important;
+        width: 100%;
+    }
+}
+
+.wiwu-banner-subcategoria-anterior-cont{
+    max-width: 1140px;
+    width: 100%;
+    height: 240px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 14px;
+}
+
+@media (max-width: 769px){
+    .wiwu-banner-subcategoria-anterior-cont{
+        height: 240px;
+    }
+}
+
+.wiwu-banner-subcategoria-anterior-box{
+    width: 640px;
+    height: inherit;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+@media (max-width: 769px){
+    .wiwu-banner-subcategoria-anterior-box{
+        width: 55%;
+    }
+}
+
+.wiwu-banner-subcategoria-anterior-box-imagen{
+    aspect-ratio: 1/1;
+    background-color: #e0e0e0;
+    height: 100%;
+    width: 240px;
+}
+
+@media (max-width: 769px){
+    .wiwu-banner-subcategoria-anterior-box-imagen{
+        display: none;
+    }
+}
+
+.wiwu-banner-subcategoria-anterior-box-imagen img{
+
+}
+
+.wiwu-banner-subcategoria-anterior-box-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+    height: 195px;
+    width: 400px;
+    
+}
+
+.wiwu-banner-subcategoria-anterior-box-info-1{
+    background: #2E2E2E;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    height: 100%;
+    padding: 20px 40px 20px 40px;
+    width: 100%;
+}
+
+@media (max-width: 769px){
+    .wiwu-banner-subcategoria-anterior-box-info-1{
+        padding:  20px;
+    }
+}
+
+.wiwu-banner-subcategoria-anterior-box-info-titulo{
+    color: #ffffff !important;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-size: 25px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 0 !important;
+}
+
+@media (max-width: 769px){
+    .wiwu-banner-subcategoria-anterior-box-info-titulo{
+        font-size: 20px !important;
+    }
+}
+
+.wiwu-banner-subcategoria-anterior-box-info-texto{
+    color: #ffffff !important;
+    text-align: left;
+    line-height: 1.2 !important;
+    font-size: 13px;
+    font-family: 'poppins', sans-serif;
+    margin-bottom: 0 !important;
+    min-height: 33px;
+}
+
+.wiwu-banner-subcategoria-flechas{
+    background-color: #eeeeee;
+    position: absolute;
+    z-index: 10;
+    background: #eeeeee;
+    right: 0%;
+    top: 0px;
+    width: 400px;
+}
+@media (max-width: 769px){
+    .wiwu-banner-subcategoria-flechas{
+        background: #2E2E2E;
+        width: 55%;
+    }
+}
+
+.wiwu-banner-subcategoria-flechas .owl-nav{
+    background-color: #2E2E2E;
+    width: 100px;
+}
+
+.wiwu-banner-subcategoria-flechas .owl-nav .owl-prev,
+.wiwu-banner-subcategoria-flechas .owl-nav .owl-next{
+    background-color: #2E2E2E;
+    border: unset !important;
+}
+
+.wiwu-banner-subcategoria-flechas .owl-nav .owl-prev span,
+.wiwu-banner-subcategoria-flechas .owl-nav .owl-next span{
+    font-size: 25px;
+    line-height: 1;
+}
+
+.wiwu-banner-slider-id{
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+#wiwu-product-container{
+    max-width: 1140px !important;
+    margin: 0 auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+#wiwu-product-container .products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#wiwu-product-container .products li{
+    max-width: 23%;
+}
+
+@media (max-width:992px){
+    #wiwu-product-container .products li{
+        max-width: 31%;
+    }
+}
+
+@media (max-width:769px){
+    #wiwu-product-container .products li{
+        max-width: 47%;
+        margin-bottom: 0px !important;
+    }
+}
+
+.wiwu-banner-carousel-titulo-muy-grande{
+    font-size: 200px !important;
+}
+
+@media (max-width: 992px) {
+    .wiwu-banner-carousel-titulo-muy-grande{
+        font-size: 150px !important;
+    }
+}
+
+@media (max-width: 769px) {
+    .wiwu-banner-carousel-titulo-muy-grande{
+        font-size: 130px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .wiwu-banner-carousel-titulo-muy-grande{
+        font-size: 24vw !important;
+    }
+}
+
+.wiwu-banner-carousel-titulo-mediana{
+    font-size: 140px !important;
+}
+
+
+
+@media (max-width:1264px){
+    .wiwu-banner-carousel-titulo-mediana{
+        font-size: 130px !important;
+    }
+}
+
+@media (max-width:992px){
+    .wiwu-banner-carousel-titulo-mediana{
+        font-size: 110px !important;
+    }
+}
+
+@media (max-width:769px){
+    .wiwu-banner-carousel-titulo-mediana{
+        font-size: 100px !important;
+    }
+}
+
+@media (max-width:600px){
+    .wiwu-banner-carousel-titulo-mediana{
+        font-size: 16vw !important;
+    }
+}
