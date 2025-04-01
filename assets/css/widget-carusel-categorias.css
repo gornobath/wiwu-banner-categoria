@@ -236,7 +236,7 @@
 }
 
 .wiwu-banner-subcategoria-anterior-cont{
-    max-width: 1140px;
+    max-width: 100%;
     width: 100%;
     height: 240px;
     margin: 0 auto;
@@ -251,7 +251,7 @@
 }
 
 .wiwu-banner-subcategoria-anterior-box{
-    width: 640px;
+    width: 50%;
     height: inherit;
     position: absolute;
     bottom: 0;
@@ -297,7 +297,7 @@
     align-items: flex-start;
     gap: 0px;
     height: 195px;
-    width: 400px;
+    width: 100%;
     
 }
 
@@ -329,6 +329,7 @@
     font-size: 25px !important;
     line-height: 1.2 !important;
     margin-bottom: 0 !important;
+	max-width: 400px;
 }
 
 @media (max-width: 769px){
@@ -345,6 +346,7 @@
     font-family: 'poppins', sans-serif;
     margin-bottom: 0 !important;
     min-height: 33px;
+	max-width: 400px;
 }
 
 .wiwu-banner-subcategoria-flechas{
@@ -354,7 +356,7 @@
     background: #eeeeee;
     right: 0%;
     top: 0px;
-    width: 400px;
+    width: calc(50% - 240px);
 }
 @media (max-width: 769px){
     .wiwu-banner-subcategoria-flechas{
@@ -419,7 +421,6 @@
         margin-bottom: 0px !important;
     }
 }
-
 .wiwu-banner-carousel-titulo-muy-grande{
     font-size: 200px !important;
 }
@@ -441,6 +442,7 @@
         font-size: 24vw !important;
     }
 }
+
 
 .wiwu-banner-carousel-titulo-mediana{
     font-size: 140px !important;
@@ -470,4 +472,9 @@
     .wiwu-banner-carousel-titulo-mediana{
         font-size: 16vw !important;
     }
+}
+
+
+.products .woocommerce-LoopProduct-link.woocommerce-loop-product__link{
+    display: none !important;
 }
