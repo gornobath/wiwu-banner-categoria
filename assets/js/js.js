@@ -35,11 +35,26 @@ jQuery(document).ready(function($) {
             var idSubCategoria = $('.wiwu-banner-carousel .item').eq(event.item.index).find('.wiwu-banner-slider-id').attr('id');
             if(idSubCategoria){
                 var productID =  idSubCategoria.split('-').pop();
-                console.log('ID producto: '+productID)
                 $.ajax({
                 url: admin_url.ajax_url, // Este es el URL de administración en WordPress
                 type: 'POST',
                 data: {
+                    action: 'wiwu_mostrar_productos_subcategoria',  // El nombre de la acción AJAX
+                    product_id: productID               // Pasamos el ID del producto
+                },
+                success: function(response) {
+                    // Aquí puedes actualizar el contenido con la respuesta, por ejemplo:
+                    //$('.wiwu-product-container').html(response);
+                    $('.wiwu-woo-products').html(response);
+                    
+                },
+                error: function() {
+                    console.log("Error en la solicitud AJAX");
+                }
+            });
+
+            /*
+             data: {
                     action: 'wiwu_actualizar_productos_por_subcategorias',  // El nombre de la acción AJAX
                     product_id: productID               // Pasamos el ID del producto
                 },
@@ -48,10 +63,7 @@ jQuery(document).ready(function($) {
                     $('#wiwu-product-container').html(response);
                     
                 },
-                error: function() {
-                    console.log("Error en la solicitud AJAX");
-                }
-            });
+            */
             }
 
             // Clonamos los elementos deseados del slide anterior, asegurándonos de que existen

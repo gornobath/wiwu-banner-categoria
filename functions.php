@@ -1,7 +1,7 @@
 <?php if (!defined('ABSPATH')) exit;
 
 
-add_action( 'wp_ajax_nopriv_wiwu_actualizar_productos_por_subcategorias', 'wiwu_actualizar_productos_por_subcategorias' );
+/* add_action( 'wp_ajax_nopriv_wiwu_actualizar_productos_por_subcategorias', 'wiwu_actualizar_productos_por_subcategorias' );
 add_action( 'wp_ajax_wiwu_actualizar_productos_por_subcategorias', 'wiwu_actualizar_productos_por_subcategorias' );
 
 function wiwu_actualizar_productos_por_subcategorias() {
@@ -33,3 +33,4 @@ function wiwu_actualizar_productos_por_subcategorias() {
     // Terminar el proceso
     wp_die();
 }
+ */
