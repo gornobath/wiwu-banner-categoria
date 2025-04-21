@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Wiwu Banner Categorias
  * Description: Plugin para mostrar un banner de la categorias y mostrar slides con subcategorias y que esta al cambiar de flecha muestre los productos de la subcategoria seleccionada
- * Version: 1.0
+ * Version: 1.3
  * Author: Tu Nombre
  */
 

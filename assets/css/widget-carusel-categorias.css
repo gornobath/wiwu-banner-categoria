@@ -8,7 +8,7 @@
 
 @media (max-width:769px){
     .wiwu-banner-categoria{
-        height: 500px;
+        height: 600px;
     }
     
 }
@@ -211,6 +211,12 @@
 }
 
 @media (max-width: 769px){
+    .wiwu-banner-carousel-box-informacion-titulo-grande{
+        font-size: 40px !important;
+    }
+    .wiwu-banner-carousel-box-informacion-titulo-mediana{
+        font-size: 32px !important;
+    }
     .wiwu-banner-carousel-box-informacion-titulo-pequena{
         font-size: 25px !important;
     }
@@ -318,6 +324,7 @@
 @media (max-width: 769px){
     .wiwu-banner-subcategoria-anterior-box-info-1{
         padding:  20px;
+        justify-content: flex-start;
     }
 }
 
