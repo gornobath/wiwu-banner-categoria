@@ -123,28 +123,25 @@ class Elementor_Custom_Carousel extends \Elementor\Widget_Base {
         <div class="wiwu-banner-categoria">
             <div class="wiwu-banner-categoria-cont">
                 <div class="wiwu-banner-categoria-box">
+                <?php 
+
+if($settings['main_title_size'] == 'xx-large'):
+    $tamanoTituloPrincipal = 'wiwu-banner-carousel-titulo-muy-grande';
+elseif($settings['main_title_size'] == 'x-large'):
+    $tamanoTituloPrincipal = 'wiwu-banner-carousel-titulo-grande';
+elseif($settings['main_title_size'] == 'mediana'):
+    $tamanoTituloPrincipal = 'wiwu-banner-carousel-titulo-mediana';
+elseif($settings['main_title_size'] == 'small'):
+    $tamanoTituloPrincipal = 'wiwu-banner-carousel-titulo-pequena';
+elseif($settings['main_title_size'] == 'x-small'):
+    $tamanoTituloPrincipal = 'wiwu-banner-carousel-titulo-muy-pequena';
+endif; 
+?>
+<h2 class="wiwu-banner-categoria-box-titulo <?php echo esc_attr($tamanoTituloPrincipal );?>">
                     <div class="wiwu-banner-categoria-margen">
 
-                    <?php 
-//  'xx-large' 
-//  'x-large' 
-//  'large' => __('Mediana', 'wiwu-titulo-principal-carousel-categoria'),
-//  'small' => 
-//  'x-small'
-
-                        if($settings['main_title_size'] == 'xx-large'):
-                            $tamanoTituloPrincipal = 'wiwu-banner-carousel-titulo-muy-grande';
-                        elseif($settings['main_title_size'] == 'x-large'):
-                            $tamanoTituloPrincipal = 'wiwu-banner-carousel-titulo-grande';
-                        elseif($settings['main_title_size'] == 'mediana'):
-                            $tamanoTituloPrincipal = 'wiwu-banner-carousel-titulo-mediana';
-                        elseif($settings['main_title_size'] == 'small'):
-                            $tamanoTituloPrincipal = 'wiwu-banner-carousel-titulo-pequena';
-                        elseif($settings['main_title_size'] == 'x-small'):
-                            $tamanoTituloPrincipal = 'wiwu-banner-carousel-titulo-muy-pequena';
-                        endif; 
-                    ?>
-                        <h2 class="wiwu-banner-categoria-box-titulo <?php echo esc_attr($tamanoTituloPrincipal );?>">
+                
+                        <!-- <h2 class="wiwu-banner-categoria-box-titulo <?php echo esc_attr($tamanoTituloPrincipal );?>"> -->
 
                         <?php 
                             echo wp_kses($settings['main_title'], array(

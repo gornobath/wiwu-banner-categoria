@@ -71,14 +71,14 @@
 .wiwu-banner-categoria-box-titulo{
     display: block;
     color: #ffffff !important;
-    margin-bottom: 0 !important;
     font-weight: 800 !important;
     font-family: 'Roboto';
     letter-spacing: 0;
     line-height: 1 !important;
+    margin-bottom: 0 !important;
+    opacity: 0.4;
     text-transform: uppercase;
     width: 100%;
-
 }
 
 
